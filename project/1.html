@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .feature-box {
+            border: 20px solid #007bff;
+            background-color: #c6c6d8;
+            padding: 20px;
+            text-align: center;
+            margin: 10px;
+            height: 270px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            /* background-color: #007bff; */
+        
+        }
+        .feature-box h2 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .feature-box p {
+            margin: 0;
+        }
+        .hero{
+            background-color:#c6c6d8;
+        }
+        /* Adjustments for the "What Sets Us Apart" section */
+.features {
+    padding-bottom: 50px; /* Add some space below the section */
+}
+
+.features h2 {
+    margin-top: 50px;
+     /* Add margin at the bottom of the heading */
+}
+
+.section-description {
+    margin-bottom: 30px; /* Add margin below the description */
+}
+.footer {
+            background-color: #c6c6d8;
+            color: white;
+            text-align: center;
+            padding: 10px 3px;
+        }
+
+        .footer .contact-info {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+
+        .footer .contact-info p {
+            margin: 5px;
+        }
+
+        .footer .navigation-links {
+            /* text-align: left; */
+            position: relative;
+            
+        }
+
+        .footer .navigation-links a {
+            color: rgb(20, 19, 19);
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+        }
+
+        .footer .feedback-form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .footer .feedback-form input,
+        .footer .feedback-form textarea {
+            width: calc(50% - 5px); /* Adjust the width to fit the container */
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .footer .feedback-form textarea {
+            width: 85%;
+            height: 40px; /* Adjust the height as needed */
+        }
+
+        .footer .feedback-form button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 7px 14px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .footer .feedback-form button:hover {
+            background-color: #0056b3;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 10px;
+        }
+        .copyright{
+            background-color: #116fd4;
+            margin-top: 0px;
+            text-align: center;
+            /* position: fixed; */
+            overflow: hidden;
+        }
+</style>
+
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#">TASKIFY</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link" href="#learn">Task</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#signin">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link highlight" href="#">Sign In</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-left">
+                <h1>Stay Organized, Get Things Done</h1>
+                <p>Effortlessly manage your tasks and stay on top of your to-do list with our intuitive platform.
+                    Say goodbye to clutter and hello to productivity!
+                </p>
+                <div class="buttons">
+                    <a href="#" class="btn btn-primary demo-button">Get Started</a>
+                    <a href="#" class="btn btn-secondary learn-button">Learn More</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="bg.png" alt="To-Do List" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+</section>
+
+<!-- Feature Columns -->
+<!-- Feature Columns -->
+<section id="features" class="features">
+    <div class="container text-center">
+        <h2>What Sets Us Apart</h2>
+        <p class="section-description">Discover how our platform stands out from the rest.</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <h2>Streamline</h2>
+                    <p>Our platform is designed with simplicity in mind, making it easy for users to get started and stay organized.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <h2>Flexible</h2>
+                    <p>Effortlessly manage tasks with our platform's tailored features for adding, removing, and organizing your to-do list.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <h2>Progress</h2>
+                    <p>We are committed to listening to our users' feedback and constantly improving our platform to better serve you.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bottom Section -->
+<section class="bottom-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="contact.jpg" alt="Relaxing Image" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h2>WE ARE HERE FOR YOU.</h2>
+                <!-- <p>Our team is dedicated to providing you with the best experience possible. Whether you have questions about our platform, need assistance with account setup, or want to provide feedback, we're here to help!</p> -->
+                <p>Feel free to reach out to us via email, phone, or our online contact form. We strive to respond to all inquiries promptly and ensure that you have a seamless experience with our service.</p>
+                <p>Let's work together to make task management effortless and enjoyable for you. Get in touch with us today!</p>
+                <a href="signup.html" class="btn btn-primary">Get in Touch</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="social-icons">
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-google-plus"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+    <a href="mailto:akanksha.kumari@lpu.in"><i class="far fa-envelope"></i></a>
+</section>
+
+<section class="footer">
+    <div class="contact-info">
+        <div>
+            <p>Address: LOVELY PROFESSIONAL UNIVERSITY</p>
+            <p>Jalandhar, Punjab</p>
+            <p>Phone: 91+ 8434675911</p>
+            <p>Email: akanksha.kumari@lpu.in</p>
+        </div>
+        <div class="navigation-links">
+            <a href="#">HOME</a>
+            <a href="#">TASK</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">CONTACT</a>
+        </div>
+        <div class="feedback-form">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Feedback"></textarea>
+            <button>Submit</button>
+        </div>
+    </div>
+</section>
+<div class="copyright">
+<p>&copy; 2015 MaybeForYou, Inc. All rights reserved.</p>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
