@@ -1,0 +1,204 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homepage</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <style>
+        /* Styles for header */
+        .header {
+            position: relative;
+            height: 800px;
+            /* width: fit-content; */
+            background-image: url('about3.jpg'); /* Add your header image */
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: rgb(27, 25, 25);
+        }
+
+        .header-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Styles for section with three containers */
+        .mission-section {
+            padding: 50px 0;
+        }
+
+        .mission-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .mission-content {
+            text-align: center;
+        }
+
+        .mission-img {
+            width: 100%;
+            height: auto;
+        }
+
+        .promise-section {
+            background-image: url('promise-image.jpg'); /* Add your promise image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .promise-content {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
+    <body>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo2.png" alt="Logo" height="30" class="mr-2"> <!-- Add your logo here -->
+                TASKIFY
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#learn">Task</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#signin">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-primary nav-link highlight">Sign In</button> <!-- Changed to a button -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- Header -->
+<div class="header" style="background-image: url('about3.jpg');">
+    <div class="header-text">
+        <h1>GET YOUR THINGS DONE</h1>
+        <h2>WITH TASKIFY</h2>
+        <p>Welcome to [Your Website Name]. At [Your Website Name], we believe in the power of organization and productivity. Our platform is dedicated to helping individuals and teams accomplish their goals efficiently and effectively.</p>
+    </div>
+</div>
+
+
+<!-- Section with three containers -->
+<section class="mission-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="mission-container">
+                    <img src="mission.jpg" alt="Mission Image" class="mission-img"> <!-- Add your image -->
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mission-container">
+                    <div class="mission-content">
+                        <h2>Our Mission</h2>
+                        <p>Our mission is simple: to provide users with a reliable and intuitive tool for managing their tasks and projects. We strive to simplify the complexities of daily life and work by offering a user-friendly solution that adapts to your unique needs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mission-container">
+                    <img src="mission.jpg" alt="Promise Image" class="mission-img"> <!-- Add your image -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Promise Section -->
+<section class="promise-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="promise-content">
+                    <h2>Our Promise</h2>
+                    <p>At [Your Website Name], we prioritize the security and privacy of our users. You can trust that your data is safe with us, and we will always strive to provide a positive and transparent experience for our users.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript for swipe feature (optional) -->
+<script>
+    // Get the element to be swiped
+    var swipeElement = document.querySelector('.mission-section');
+
+    // Variables to store touch position
+    var startX;
+    var startY;
+    var distX;
+    var distY;
+
+    // Minimum distance required for swipe
+    var threshold = 100;
+
+    // Maximum time allowed for a swipe
+    var allowedTime = 300;
+
+    // Time variables
+    var startTime;
+    var elapsedTime;
+
+    // Event listener for touchstart event
+    swipeElement.addEventListener('touchstart', function (e) {
+        var touch = e.changedTouches[0];
+        startX = touch.pageX;
+        startY = touch.pageY;
+        startTime = new Date().getTime();
+    });
+
+    // Event listener for touchend event
+    swipeElement.addEventListener('touchend', function (e) {
+        var touch = e.changedTouches[0];
+        distX = touch.pageX - startX;
+        distY = touch.pageY - startY;
+        elapsedTime = new Date().getTime() - startTime;
+
+        // Check if the swipe meets the threshold distance and time criteria
+        if (elapsedTime <= allowedTime) {
+            if (Math.abs(distX) >= threshold && Math.abs(distY) <= 100) {
+                if (distX > 0) {
+                    // Swipe right
+                    console.log('Swipe right');
+                    // Add your code to navigate right here
+                } else {
+                    // Swipe left
+                    console.log('Swipe left');
+                    // Add your code to navigate left here
+                }
+            }
+        }
+    });
+</script>
+
+</body>
+</html>

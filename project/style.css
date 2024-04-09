@@ -1,0 +1,150 @@
+.navbar {
+    padding: 10px 20px; /* Adjust padding to expand the navbar */
+    font-size: large;
+}
+.navbar-brand{
+margin-right: 10px;
+font-size: 30px;
+}
+
+.navbar-brand img {
+    /* margin-right:  700px; */
+    height: 50px; 
+
+
+    /* Add margin to separate the logo from brand text */
+}
+/* ==============Hero section=============== */
+.feature-box {
+    border: 20px solid #007bff;
+    background-color: #c6c6d8;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    /* background-color: #007bff; */
+
+}
+.feature-box h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.feature-box p {
+    margin: 0;
+}
+.hero{
+    background-color:#c6c6d8;
+}
+/* Adjustments for the "What Sets Us Apart" section */
+.features {
+padding-bottom: 50px; /* Add some space below the section */
+}
+
+.features h2 {
+margin-top: 50px;
+/* Add margin at the bottom of the heading */
+}
+
+.section-description {
+margin-bottom: 30px; /* Add margin below the description */
+}
+
+
+/* ========================FOOTTTEEEERRRRR================ */
+.footer {
+    background-color: #c6c6d8;
+    color: white;
+    text-align: center;
+    padding: 10px 3px;
+}
+
+.footer .contact-info {
+    /* display: flex; */
+    /* justify-content: space-around; */
+    position: relative;;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+.footer .contact-info p {
+    margin: 5px;
+    text-align: center;
+}
+
+.footer .navigation-links {
+    /* text-align: left; */
+    position: relative;
+    margin-top: 40px;
+    
+}
+
+.footer .navigation-links a {
+    color: rgb(20, 19, 19);
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.footer .feedback-form {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer .feedback-form input,
+.footer .feedback-form textarea {
+    width: calc(50% - 5px); /* Adjust the width to fit the container */
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.footer .feedback-form textarea {
+    width: 100%;
+    height: 40px; /* Adjust the height as needed */
+}
+
+.footer .feedback-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 7px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer .feedback-form button:hover {
+    background-color: #0056b3;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 10px;
+    font-size: 20px;
+}
+.copyright{
+    background-color: #116fd4;
+    margin-top: 0px;
+    text-align: center;
+    /* position: fixed; */
+    overflow: hidden;
+}

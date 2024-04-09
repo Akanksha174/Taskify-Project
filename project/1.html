@@ -5,142 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <style>
-        .feature-box {
-            border: 20px solid #007bff;
-            background-color: #c6c6d8;
-            padding: 20px;
-            text-align: center;
-            margin: 10px;
-            height: 270px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 20px;
-            /* background-color: #007bff; */
-        
-        }
-        .feature-box h2 {
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-        .feature-box p {
-            margin: 0;
-        }
-        .hero{
-            background-color:#c6c6d8;
-        }
-        /* Adjustments for the "What Sets Us Apart" section */
-.features {
-    padding-bottom: 50px; /* Add some space below the section */
-}
-
-.features h2 {
-    margin-top: 50px;
-     /* Add margin at the bottom of the heading */
-}
-
-.section-description {
-    margin-bottom: 30px; /* Add margin below the description */
-}
-.footer {
-            background-color: #c6c6d8;
-            color: white;
-            text-align: center;
-            padding: 10px 3px;
-        }
-
-        .footer .contact-info {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 40px;
-            margin-bottom: 10px;
-        }
-
-        .footer .contact-info p {
-            margin: 5px;
-        }
-
-        .footer .navigation-links {
-            /* text-align: left; */
-            position: relative;
-            
-        }
-
-        .footer .navigation-links a {
-            color: rgb(20, 19, 19);
-            font-weight: bold;
-            text-decoration: none;
-            display: block;
-            margin: 5px 0;
-        }
-
-        .footer .feedback-form {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: flex-start;
-        }
-
-        .footer .feedback-form input,
-        .footer .feedback-form textarea {
-            width: calc(50% - 5px); /* Adjust the width to fit the container */
-            padding: 5px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-        }
-
-        .footer .feedback-form textarea {
-            width: 85%;
-            height: 40px; /* Adjust the height as needed */
-        }
-
-        .footer .feedback-form button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 7px 14px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .footer .feedback-form button:hover {
-            background-color: #0056b3;
-        }
-
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 10px;
-        }
-
-        .social-icons a {
-            color: white;
-            margin: 0 10px;
-            font-size: 10px;
-        }
-        .copyright{
-            background-color: #116fd4;
-            margin-top: 0px;
-            text-align: center;
-            /* position: fixed; */
-            overflow: hidden;
-        }
-</style>
-
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
 <!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg">
     <div class="container">
-        <a class="navbar-brand" href="#">TASKIFY</a>
+        <a class="navbar-brand" href="#">
+            <img src="logo2.png" alt="Logo" height="30" class="mr-2"> <!-- Add your logo here -->
+            TASKIFY
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -149,7 +25,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#home">Home</a>
                 </li>
-    
                 <li class="nav-item">
                     <a class="nav-link" href="#learn">Task</a>
                 </li>
@@ -157,12 +32,13 @@
                     <a class="nav-link" href="#signin">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link highlight" href="#">Sign In</a>
+                    <button class="btn btn-primary nav-link highlight">Sign In</button> <!-- Changed to a button -->
                 </li>
             </ul>
         </div>
     </div>
 </nav>
+
 
 <!-- Hero Section -->
 <section class="hero">
@@ -187,8 +63,6 @@
 
 </section>
 
-<!-- Feature Columns -->
-<!-- Feature Columns -->
 <section id="features" class="features">
     <div class="container text-center">
         <h2>What Sets Us Apart</h2>
@@ -234,39 +108,58 @@
     </div>
 </section>
 
-<section class="social-icons">
-    <a href="#" class="fa fa-facebook"></a>
-    <a href="#" class="fa fa-twitter"></a>
-    <a href="#" class="fa fa-google-plus"></a>
-    <a href="#" class="fa fa-linkedin"></a>
-    <a href="mailto:akanksha.kumari@lpu.in"><i class="far fa-envelope"></i></a>
-</section>
 
+<!-- Footer Section -->
 <section class="footer">
-    <div class="contact-info">
-        <div>
-            <p>Address: LOVELY PROFESSIONAL UNIVERSITY</p>
-            <p>Jalandhar, Punjab</p>
-            <p>Phone: 91+ 8434675911</p>
-            <p>Email: akanksha.kumari@lpu.in</p>
-        </div>
-        <div class="navigation-links">
-            <a href="#">HOME</a>
-            <a href="#">TASK</a>
-            <a href="#">ABOUT US</a>
-            <a href="#">CONTACT</a>
-        </div>
-        <div class="feedback-form">
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <textarea placeholder="Feedback"></textarea>
-            <button>Submit</button>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="contact-info">
+                    <!-- Your contact information here -->
+                    <p>Address: LOVELY PROFESSIONAL UNIVERSITY</p>
+                    <p>Jalandhar, Punjab</p>
+                    <p>Phone: 91+ 8434675911</p>
+                    <p>Email: akanksha.kumari@lpu.in</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="navigation-links">
+                    <!-- Your navigation links here -->
+                    <a href="#">HOME</a>
+                    <a href="#">TASK</a>
+                    <a href="#">ABOUT US</a>
+                    <a href="#">CONTACT</a>
+                </div>
+                <section class="social-icons">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-google-plus"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                </section>
+            </div>
+            <div class="col-md-4">
+                <div class="feedback-form">
+                    <!-- Your feedback form here -->
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Feedback"></textarea>
+                    <button>Submit</button>
+                </div>
+            </div>
         </div>
     </div>
 </section>
+
+<!-- Copyright Section -->
 <div class="copyright">
-<p>&copy; 2015 MaybeForYou, Inc. All rights reserved.</p>
+    <p>&copy; 2015 MaybeForYou, Inc. All rights reserved.</p>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
