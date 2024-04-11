@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     </head>
     
     <style>
@@ -16,6 +17,7 @@
             position: relative;
             height: 800px;
             background-color: #c6c6d8 !important;
+
         }
 
         .header-text {
@@ -27,47 +29,17 @@
 
         /* Styles for section with three containers */
         .mission-section {
-            padding: 50px 0;
+            padding: 40px;
             background-color: #c6c6d8;
-        }
 
-        .mission-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-        }
 
-        .mission-content {
-            text-align: center;
         }
-
-        .mission-img {
-            width: 100%;
-            height: auto;
-        }
-
-        .promise-section {
-            background-image: url('promise-image.jpg'); /* Add your promise image */
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 100px 0;
-            text-align: center;
-        }
-
-        .promise-content {
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 20px;
-            border-radius: 5px;
-        }
-        * {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin: auto;
+  margin-top: 20px;
   /* background-color: aqua; */
 }
 
@@ -104,24 +76,9 @@
 }
 
 /* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
+
 
 /* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
 
 /* Fading animation */
 .fade {
@@ -141,6 +98,47 @@
         display: block;
         opacity: 1; /* Make the image visible */
     }
+
+.middle-section {
+
+      padding: 50px 0;
+    }
+    .content1 {
+      margin-top: 40px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px #b0c7d7;
+      border-radius: 10px;
+    }
+    .content2 {
+     
+     margin-bottom: 20px;
+     margin-left: 100px;
+   }
+    .content3 {
+      margin-top: 40px;
+     padding: 20px;
+     margin-bottom: 20px;
+     box-shadow: 0 0 10px #b0c7d7;
+     border-radius: 5px;
+   }
+    .content1 h2 {
+      color: #527cdf;
+      text-align: center;
+    }
+    .content3 h2 {
+      color: #527cdf;
+      text-align: center;
+    }
+    .content3 p {
+      color: #090a0a;
+      text-align: center;
+    }
+    .content1 p {
+      color: #090a0a;
+      text-align: center;
+    }
+
     </style>
     <body>
     
@@ -185,7 +183,7 @@
                         <img src="a9.png" style="width:100%">
                     </div>
                     <div class="mySlides">
-                        <img src="a7.png" style="width:100%">
+                        <img src="a11.png" style="width:100%">
                     </div>
                     <div class="mySlides">
                         <img src="a5.png" style="width:100%">
@@ -214,47 +212,78 @@
     </div>
 </section>
 
-
-<!-- Section with three containers -->
-<section class="mission-section1">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="mission-container">
-                    <img src="mission.jpg" alt="Mission Image" class="mission-img"> <!-- Add your image -->
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="mission-container">
-                    <div class="mission-content">
-                        <h2>Our Mission</h2>
-                        <p>Our mission is simple: to provide users with a reliable and intuitive tool for managing their tasks and projects. 
-                            We strive to simplify the complexities of daily life and work by offering a user-friendly solution that adapts to your unique needs.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="mission-container">
-                    <img src="mission2.png" alt="Promise Image" class="mission-img"> <!-- Add your image -->
-                </div>
-            </div>
+<section class="middle-section">
+  <!-- <h3>MISSION AND VISIONS</h3> -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="content1">
+          <h2>OUR MISSION</h2>
+          <p>Our mission is simple: to provide users with a reliable and intuitive tool for managing their tasks and projects. We strive to simplify the complexities of daily life and work by offering a user-friendly solution that adapts to your unique needs.</p>
         </div>
+      </div>
+      <div class="col-md-4">
+        <div class="content2">
+          <img src="vm.png" alt="Responsive image" height="300px">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="content3">
+          <h2>OUR VISION</h2>
+          <p>Our vision for the ultimate to-do list is simple yet profound: to empower individuals to effortlessly conquer their daily tasks and achieve their goals with clarity and ease. </p>
+        </div>
+      </div>
     </div>
+  </div>
+</section>
+  
+<!-- Footer Section -->
+<section class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-4">
+              <div class="contact-info">
+                  <!-- Your contact information here -->
+                  <p>Address: LOVELY PROFESSIONAL UNIVERSITY</p>
+                  <p>Jalandhar, Punjab</p>
+                  <p>Phone: 91+ 8434675911</p>
+                  <p>Email: akanksha.kumari@lpu.in</p>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="navigation-links">
+                  <!-- Your navigation links here -->
+                  <a href="#">HOME</a>
+                  <a href="#">TASK</a>
+                  <a href="#">ABOUT US</a>
+                  <a href="#">CONTACT</a>
+              </div>
+              <section class="social-icons">
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-twitter"></a>
+                  <a href="#" class="fa fa-google-plus"></a>
+                  <a href="#" class="fa fa-linkedin"></a>
+              </section>
+          </div>
+          <div class="col-md-4">
+              <div class="feedback-form">
+                  <!-- Your feedback form here -->
+                  <input type="text" placeholder="Name">
+                  <input type="email" placeholder="Email">
+                  <textarea placeholder="Feedback"></textarea>
+                  <button>Submit</button>
+              </div>
+          </div>
+      </div>
+  </div>
 </section>
 
-<!-- Promise Section -->
-<section class="promise-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="promise-content">
-                    <h2>Our Promise</h2>
-                    <p>At [Your Website Name], we prioritize the security and privacy of our users. You can trust that your data is safe with us, and we will always strive to provide a positive and transparent experience for our users.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<!-- Copyright Section -->
+<div class="copyright">
+  <p>&copy; 2015 MaybeForYou, Inc. All rights reserved.</p>
+</div>
+  
+  
 <script src="script.js"></script>
 
 </body>
