@@ -1,6 +1,7 @@
 .navbar {
     padding: 10px 20px; /* Adjust padding to expand the navbar */
     font-size: large;
+    
 }
 .navbar-brand{
 margin-right: 10px;
@@ -10,15 +11,16 @@ font-size: 30px;
 .navbar-brand img {
     /* margin-right:  700px; */
     height: 50px; 
-
-
-    /* Add margin to separate the logo from brand text */
+}
+.navbar-toggler-icon{
+    color: #527cdf;
 }
 /* ==============Hero section=============== */
 .feature-box {
-    border: 20px solid #007bff;
-    background-color: #c6c6d8;
+    box-shadow: 4px 4px 4px 4px #c6d4ed;
+    background-color: #fff;
     padding: 20px;
+    border-radius: 10px;
     text-align: center;
     margin: 10px;
     height: 270px;
@@ -33,12 +35,14 @@ font-size: 30px;
 .feature-box h2 {
     margin-top: 20px;
     margin-bottom: 10px;
+    color: #c6d4ed;
 }
 .feature-box p {
     margin: 0;
 }
 .hero{
-    background-color:#c6c6d8;
+    background-color:#c6d4ed;
+    
 }
 /* Adjustments for the "What Sets Us Apart" section */
 .features {
@@ -57,15 +61,13 @@ margin-bottom: 30px; /* Add margin below the description */
 
 /* ========================FOOTTTEEEERRRRR================ */
 .footer {
-    background-color: #c6c6d8;
+    background-color: #c6d4ed;
     color: white;
     text-align: center;
     padding: 10px 3px;
 }
 
 .footer .contact-info {
-    /* display: flex; */
-    /* justify-content: space-around; */
     position: relative;;
     margin-top: 40px;
     margin-bottom: 10px;
@@ -79,7 +81,6 @@ margin-bottom: 30px; /* Add margin below the description */
 }
 
 .footer .navigation-links {
-    /* text-align: left; */
     position: relative;
     margin-top: 40px;
     
@@ -107,7 +108,7 @@ margin-bottom: 30px; /* Add margin below the description */
     padding: 5px;
     margin-bottom: 10px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #c6d4ed;
     box-sizing: border-box;
 }
 
@@ -142,9 +143,270 @@ margin-bottom: 30px; /* Add margin below the description */
     font-size: 20px;
 }
 .copyright{
-    background-color: #116fd4;
+    background-color: #c6d4ed;
     margin-top: 0px;
     text-align: center;
-    /* position: fixed; */
+    overflow: hidden;
+    font-weight: bold;
+}
+
+
+/* ==============================ABOUTTTTTTTTTTT USSSSSSSSSSSSSSS */
+/* Styles for header */
+.header {
+    position: relative;
+    height: 1000px;
+    background-color: #c6d4ed !important;
+
+
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Styles for section with three containers */
+.mission-section {
+    padding: 40px;
+    background-color: #c6d4ed;
+    height: 400px;
+
+}
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin-top: 20px;
+/* background-color: aqua; */
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+
+
+/* Number text (1/3 etc) */
+
+/* Fading animation */
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+.mySlides {
+display: none;
+transition: opacity 1s ease-in-out; /* Smooth transition effect */
+}
+
+.fade-in {
+display: block;
+opacity: 1; /* Make the image visible */
+}
+
+.middle-section {
+
+padding: 50px 0;
+}
+.content1 {
+margin-top: 40px;
+padding: 20px;
+margin-bottom: 20px;
+box-shadow: 0 0 10px #c6d4ed;
+border-radius: 10px;
+}
+.content2 {
+
+margin-bottom: 20px;
+margin-left: 100px;
+}
+.content3 {
+margin-top: 40px;
+padding: 20px;
+margin-bottom: 20px;
+box-shadow: 0 0 10px #c6d4ed;
+border-radius: 5px;
+}
+.content1 h2 {
+color: #527cdf;
+text-align: center;
+}
+.content3 h2 {
+color: #527cdf;
+text-align: center;
+}
+.content3 p {
+color: #090a0a;
+text-align: center;
+}
+.content1 p {
+color: #090a0a;
+text-align: center;
+}
+
+
+/* 
+===========================CONTACTTT USSSSSS==================== */
+
+  .container2{
+    overflow: hidden;    
+  }
+  .contact-info{
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .login-form {
+   
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px 2px #bfdbdd;
+    margin-top: 100px;
+    overflow: hidden;
+    width: 80%;
+  }
+  
+  .login-form h5 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .login-form input[type="email"],
+  .login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+  }
+  
+  .login-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .login-form p {
+    text-align: center;
+  }
+  
+  .login-form a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .login-form a:hover {
+    text-decoration: underline;
+  }
+  .contact-section{
+    max-width: 100%;
+    margin-top: 40px;
+    text-align: center;
+    margin-right: 150px;
+  }
+  /* =================SIGNUPPPPPPPPPPPPP================== */
+
+  .container4 {
+    background-image: url('mission2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 107px 0; /* Adjust padding as needed */
+    opacity: 1;
     overflow: hidden;
 }
+
+/* Media query for tablets (landscape) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container4 {
+        padding: 80px 0; /* Adjust padding for tablets (landscape) */
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+    .container4 {
+        padding: 50px 0; /* Adjust padding for mobile devices */
+    }
+}
+
+
+.signup-form {
+    background-color: rgba(105, 99, 99, 0.9); /* Background color with opacity */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0.8;
+}
+
+        .signup-form {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        .signup-form h2 {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .form-label {
+            font-weight: bold;
+        }
+
+        .form-control {
+            border-radius: 20px;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 0.9rem;
+        }
+
+        .btn-primary {
+            border-radius: 20px;
+            width: 100%;
+        }
