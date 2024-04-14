@@ -1,21 +1,25 @@
+
 .navbar {
-    padding: 10px 20px; /* Adjust padding to expand the navbar */
+    padding: 10px 20px; 
     font-size: large;
-    
 }
 .navbar-brand{
 margin-right: 10px;
 font-size: 30px;
+font-family: Arial, sans-serif;
 }
 
 .navbar-brand img {
-    /* margin-right:  700px; */
     height: 50px; 
+}
+
+div{
+    font-family:Tahoma, Verdana, sans-serif;
 }
 
 /* ==============Hero section=============== */
 .feature-box {
-    box-shadow: 4px 4px 4px 4px #c6d4ed;
+    box-shadow: 4px 4px 4px 4px #95b6ed;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -32,27 +36,37 @@ font-size: 30px;
 .feature-box h2 {
     margin-top: 20px;
     margin-bottom: 10px;
-    color: #c6d4ed;
+    color: #ffbd31;
+    
+
 }
 .feature-box p {
     margin: 0;
+
 }
 .hero{
     background-color:#c6d4ed;
-    
+    font-size: 20px;
 }
-/* Adjustments for the "What Sets Us Apart" section */
+
 .features {
-padding-bottom: 50px; /* Add some space below the section */
+padding-bottom: 50px;
 }
 
 .features h2 {
 margin-top: 50px;
-/* Add margin at the bottom of the heading */
+
 }
 
 .section-description {
-margin-bottom: 30px; /* Add margin below the description */
+margin-bottom: 30px;
+font-size: 20px;
+}
+
+.col-md-6 h2{
+    text-align: center;
+    color: #6497f0;
+    font-weight: 300;
 }
 
 
@@ -68,8 +82,8 @@ margin-bottom: 30px; /* Add margin below the description */
     position: relative;;
     margin-top: 40px;
     margin-bottom: 10px;
-    font-weight: bold;
     color: black;
+    font-size: 20px;
 }
 
 .footer .contact-info p {
@@ -80,12 +94,11 @@ margin-bottom: 30px; /* Add margin below the description */
 .footer .navigation-links {
     position: relative;
     margin-top: 40px;
-    
+    font-size: 17px;   
 }
 
 .footer .navigation-links a {
     color: rgb(20, 19, 19);
-    font-weight: bold;
     text-decoration: none;
     display: block;
     margin: 5px 0;
@@ -114,19 +127,6 @@ margin-bottom: 30px; /* Add margin below the description */
     height: 40px; /* Adjust the height as needed */
 }
 
-.footer .feedback-form button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 7px 14px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.footer .feedback-form button:hover {
-    background-color: #0056b3;
-}
-
 .social-icons {
     display: flex;
     justify-content: center;
@@ -134,36 +134,22 @@ margin-bottom: 30px; /* Add margin below the description */
 }
 
 .social-icons a {
-    color: white;
+    color: #31a2ff;
     margin: 0 10px;
     font-size: 10px;
     font-size: 20px;
 }
 .copyright{
-    background-color: #c6d4ed;
+    background-color: #6497f0;
     margin-top: 0px;
     text-align: center;
     overflow: hidden;
-    font-weight: bold;
-}
+    color: #1a1b1c;
+    font-size: 20px;
 
+}
 
 /* ==============================ABOUTTTTTTTTTTT USSSSSSSSSSSSSSS */
-/* Styles for header */
-.header {
-    position: relative;
-    height: 1000px;
-    background-color: #c6d4ed !important;
-}
-
-.header-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-/* Styles for section with three containers */
 .mission-section {
     padding: 40px;
     background-color: #c6d4ed;
@@ -234,6 +220,18 @@ margin-bottom: 30px; /* Add margin below the description */
     opacity: 1; /* Make the image visible */
 }
 
+.mission-content h2{
+    color: #090a0a;
+    font-size: 45px;
+    margin-top: 30px;
+}
+
+.mission-content p{
+    color: #090a0a;
+    font-size: 20px;
+    text-align: center;
+}
+
 .middle-section {
     padding: 50px 0;
 }
@@ -242,8 +240,9 @@ margin-bottom: 30px; /* Add margin below the description */
     margin-top: 40px;
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 0 0 10px #c6d4ed;
+    box-shadow: 2px 4px 4px 4px #c6d4ed;
     border-radius: 10px;
+    
 }
 
 .content2 {
@@ -253,15 +252,15 @@ margin-bottom: 30px; /* Add margin below the description */
 
 .content3 {
     margin-top: 40px;
-    padding: 20px;
+    padding: 30px;
     margin-bottom: 20px;
-    box-shadow: 0 0 10px #c6d4ed;
-    border-radius: 5px;
+    box-shadow: 2px 4px 4px 4px #c6d4ed;
+    border-radius: 10px;
 }
 
 .content1 h2,
 .content3 h2 {
-    color: #527cdf;
+    color: #ffbd31;
     text-align: center;
 }
 
@@ -271,10 +270,37 @@ margin-bottom: 30px; /* Add margin below the description */
     text-align: center;
 }
 
-/* Media queries for responsiveness */
+.customer-review {
+   
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+ /* Adding border */
+    padding: 20px; /* Adding padding */
+    border-radius: 800px; /* Adding border radius for rounded corners */
+    box-shadow: 4px 4px 4px 4px #c6d4ed;
+    height: 270px;
+  }
+  .customer-review img {
+    max-width: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
 
-/* 
-===========================CONTACTTT USSSSSS==================== */
+  .container h3 {
+    
+    text-align: center;
+    color: #6497f0;
+    font-size: 40px;
+  }
+  .customer-review p {
+    margin-top: 10px;
+  }
+
+
+/* ===========================CONTACTTT USSSSSS==================== */
 
   .container2{
     overflow: hidden;    
@@ -298,6 +324,8 @@ margin-bottom: 30px; /* Add margin below the description */
   .login-form h5 {
     text-align: center;
     margin-bottom: 20px;
+    font-size: 30px;
+    color: #ffbd31;
   }
   
   .login-form input[type="email"],
@@ -374,23 +402,21 @@ margin-bottom: 30px; /* Add margin below the description */
 
 
 .signup-form {
-    background-color: rgba(105, 99, 99, 0.9); /* Background color with opacity */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .signup-form {
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 30px;
 }
 
 .signup-form h2 {
     margin-bottom: 30px;
     text-align: center;
+    color: #ffbd31;
 }
 
 .form-label {
@@ -477,7 +503,7 @@ margin-bottom: 30px; /* Add margin below the description */
         }
 
 .container5 {
-    background-image: url('b.jpg');
+    background-image: url('b.png');
     background-size: cover;
     padding: 200px 0; /* Adjust padding as needed */
     opacity: 1;

@@ -1,0 +1,551 @@
+.navbar {
+    padding: 10px 20px; /* Adjust padding to expand the navbar */
+    font-size: large;
+    
+}
+.navbar-brand{
+margin-right: 10px;
+font-size: 30px;
+}
+
+.navbar-brand img {
+    /* margin-right:  700px; */
+    height: 50px; 
+}
+
+/* ==============Hero section=============== */
+.feature-box {
+    box-shadow: 4px 4px 4px 4px #c6d4ed;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+.feature-box h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #c6d4ed;
+}
+.feature-box p {
+    margin: 0;
+}
+.hero{
+    background-color:#c6d4ed;
+    
+}
+/* Adjustments for the "What Sets Us Apart" section */
+.features {
+padding-bottom: 50px; /* Add some space below the section */
+}
+
+.features h2 {
+margin-top: 50px;
+/* Add margin at the bottom of the heading */
+}
+
+.section-description {
+margin-bottom: 30px; /* Add margin below the description */
+}
+
+
+/* ========================FOOTTTEEEERRRRR================ */
+.footer {
+    background-color: #c6d4ed;
+    color: white;
+    text-align: center;
+    padding: 10px 3px;
+}
+
+.footer .contact-info {
+    position: relative;;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+.footer .contact-info p {
+    margin: 5px;
+    text-align: center;
+}
+
+.footer .navigation-links {
+    position: relative;
+    margin-top: 40px;
+    
+}
+
+.footer .navigation-links a {
+    color: rgb(20, 19, 19);
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.footer .feedback-form {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer .feedback-form input,
+.footer .feedback-form textarea {
+    width: calc(50% - 5px); /* Adjust the width to fit the container */
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #c6d4ed;
+    box-sizing: border-box;
+}
+
+.footer .feedback-form textarea {
+    width: 100%;
+    height: 40px; /* Adjust the height as needed */
+}
+
+.footer .feedback-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 7px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer .feedback-form button:hover {
+    background-color: #0056b3;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 10px;
+    font-size: 20px;
+}
+.copyright{
+    background-color: #c6d4ed;
+    margin-top: 0px;
+    text-align: center;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+
+/* ==============================ABOUTTTTTTTTTTT USSSSSSSSSSSSSSS */
+/* Styles for header */
+.header {
+    position: relative;
+    height: 1000px;
+    background-color: #c6d4ed !important;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Styles for section with three containers */
+.mission-section {
+    padding: 40px;
+    background-color: #c6d4ed;
+    height: 400px;
+}
+@media (max-width: 767px) {
+    .mission-section {
+        height: auto; /* Set height to auto for smaller screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin-top: 20px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.mySlides {
+    display: none;
+    transition: opacity 1s ease-in-out; /* Smooth transition effect */
+}
+
+.fade-in {
+    display: block;
+    opacity: 1; /* Make the image visible */
+}
+
+.middle-section {
+    padding: 50px 0;
+}
+
+.content1 {
+    margin-top: 40px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px #c6d4ed;
+    border-radius: 10px;
+}
+
+.content2 {
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+.content3 {
+    margin-top: 40px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px #c6d4ed;
+    border-radius: 5px;
+}
+
+.content1 h2,
+.content3 h2 {
+    color: #527cdf;
+    text-align: center;
+}
+
+.content3 p,
+.content1 p {
+    color: #090a0a;
+    text-align: center;
+}
+
+/* Media queries for responsiveness */
+
+/* 
+===========================CONTACTTT USSSSSS==================== */
+
+  .container2{
+    overflow: hidden;    
+  }
+  .contact-info{
+    width: 100%;
+    overflow: hidden;
+
+  }
+  
+  .login-form {
+   
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px 2px #bfdbdd;
+    margin-top: 100px;
+    overflow: hidden;
+    width: 80%;
+  }
+  
+  .login-form h5 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .login-form input[type="email"],
+  .login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+  }
+  
+  .login-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .login-form p {
+    text-align: center;
+  }
+  
+  .login-form a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .login-form a:hover {
+    text-decoration: underline;
+  }
+  .contact-section{
+    max-width: 100%;
+    margin-top: 40px;
+    text-align: center;
+    margin-right: 150px;
+  }
+
+  @media (max-width: 768px) {
+    .login-form {
+      width: 100%; /* Adjust the width for medium screens */
+      margin-right: 0; /* Remove right margin for medium screens */
+    }
+}
+  /* =================SIGNUPPPPPPPPPPPPP================== */
+
+  .container4 {
+    background-image: url('mission2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 107px 0; /* Adjust padding as needed */
+    opacity: 1;
+    overflow: hidden;
+}
+
+/* Media query for tablets (landscape) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container4 {
+        padding: 80px 0; /* Adjust padding for tablets (landscape) */
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+    .container4 {
+        padding: 50px 0; /* Adjust padding for mobile devices */
+    }
+}
+
+
+.signup-form {
+    background-color: rgba(105, 99, 99, 0.9); /* Background color with opacity */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0.8;
+}
+
+.signup-form {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.signup-form h2 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 20px;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+}
+
+.btn-primary {
+    border-radius: 20px;
+    width: 100%;
+}
+
+
+/* =========================TTTTTAAAAAAAAAAAASSSSSSSSSSSSSKKKKKKKKK============         */
+.main-content {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for depth */
+}
+
+.task-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.task-table caption {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.task-table th,
+.task-table td {
+    padding: 15px; /* Increase padding for better spacing */
+    border-bottom: 1px solid #ffffff; /* Optional: Add borders between rows */
+}
+
+.task-table th {
+    background-color: #e7eaee; /* Light background color for header */
+}
+
+.task-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa; /* Alternate row color */
+}
+
+.task-table tbody tr:hover {
+    background-color: #e9ecef; /* Hover color */
+}
+
+.high-priority {
+    color: red; /* Color for high priority tasks */
+}
+
+.medium-priority {
+    color: orange; /* Color for medium priority tasks */
+}
+
+.low-priority {
+    color: green; /* Color for low priority tasks */
+}
+
+.task-name {
+    max-width: 200px; /* Limiting the width of task name */
+    word-wrap: break-word; /* Wrapping long text */
+}
+
+.fixed-buttons {
+    position: sticky; /* Sticky position */
+    top: 0; /* Top position */
+    z-index: 1; /* Ensuring buttons stay above other elements */
+    background-color: #fff; /* Background color to cover the fixed position */
+}
+.completed-task {
+            color: grey;
+            text-decoration: line-through;
+        }
+
+.container5 {
+    background-image: url('b.jpg');
+    background-size: cover;
+    padding: 200px 0; /* Adjust padding as needed */
+    opacity: 1;
+    overflow: hidden;
+    background-attachment: fixed; /* Fix the background image */
+    position: fixed; /* Fix the background image in place */
+    top: 0; /* Position from the top of the viewport */
+    left: 0; /* Position from the left of the viewport */
+    width: 100%; /* Full width */
+    height: 100%; /* Full viewport height */
+    z-index: -1
+    
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container5 {
+        height: 1200px;
+        padding: 200px 0; /* Adjust padding for tablets (landscape) */
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+    .container5 {
+        height: 900px;
+        padding: 200px 0; /* Adjust padding for mobile devices */
+    }
+}
+
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.task-table-container {
+    max-height: 1000px; /* Adjust the maximum height as needed */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds the height */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .task-table th,
+    .task-table td {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .task-table th:first-child,
+    .task-table td:first-child {
+        min-width: auto; /* Allow the first column to adjust according to content */
+    }
+}
+.task-list-header {
+            text-align: center;
+            font-size: 45px;
+            font-weight: bold;
+            margin-top: 20px;
+           
+        }
+ /* Add styles for edit mode */
+ .edit-mode {
+            background-color: #f0f0f0; /* Light grey background */
+        }
+        .edit-button {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 10px;
+            z-index: 999;
+        }
