@@ -83,7 +83,7 @@ font-size: 20px;
     margin-top: 40px;
     margin-bottom: 10px;
     color: black;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .footer .contact-info p {
@@ -276,10 +276,10 @@ font-size: 20px;
     margin-top: 60px;
     margin-bottom: 60px;
  /* Adding border */
-    padding: 20px; /* Adding padding */
-    border-radius: 800px; /* Adding border radius for rounded corners */
-    box-shadow: 4px 4px 4px 4px #c6d4ed;
-    height: 270px;
+    padding: 10px; /* Adding padding */
+    border-radius: 20px; /* Adding border radius for rounded corners */
+    box-shadow: 2px 4px 3px 4px #c6d4ed;
+    height: 250px;
   }
   .customer-review img {
     max-width: 100px;
